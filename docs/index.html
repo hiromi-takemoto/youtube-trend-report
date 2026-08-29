@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YouTube Trend Report</title>
+<style>
+  :root{
+    --bg:#fbfbfa; --fg:#1a1a19; --muted:#6b6b66;
+    --card:#ffffff; --line:#e6e5e1; --accent:#c8553d;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#161614; --fg:#eceae5; --muted:#9a978f;
+           --card:#1f1f1c; --line:#302f2b; --accent:#e0785f; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic UI",sans-serif;
+       line-height:1.75;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:72px 24px 96px}
+  h1{font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.25;margin:0 0 .5rem;letter-spacing:-.02em}
+  .lead{color:var(--muted);font-size:1.05rem;margin:0 0 2.5rem}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:3.5rem}
+  .btn{display:inline-block;padding:13px 24px;border-radius:8px;text-decoration:none;
+       font-weight:600;font-size:.95rem;border:1px solid var(--line)}
+  .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+  .btn.ghost{background:var(--card);color:var(--fg)}
+  h2{font-size:1.15rem;margin:0 0 1.25rem;letter-spacing:-.01em}
+  ul{list-style:none;padding:0;margin:0 0 3rem;display:grid;gap:14px}
+  li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  li b{display:block;margin-bottom:3px}
+  li span{color:var(--muted);font-size:.92rem}
+  footer{border-top:1px solid var(--line);padding-top:1.5rem;color:var(--muted);font-size:.88rem}
+  code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:2px 7px;font-size:.9em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>YouTube Trend Report</h1>
+  <p class="lead">YouTubeの実データを取得して、「いま何が伸びているか」を1枚のHTMLレポートに自動でまとめるコマンドラインツールです。外部ライブラリを一切使わず、Node.js だけで動きます。</p>
+
+  <div class="btns">
+    <a class="btn primary" href="sample-report.html">サンプルレポートを見る</a>
+    <a class="btn ghost" href="https://github.com/hiromi-takemoto/youtube-trend-report">ソースコードを見る</a>
+  </div>
+
+  <h2>できること</h2>
+  <ul>
+    <li><b>勢いランキング</b><span>総再生数ではなく「1日あたり再生数」で並べ替え。昔バズった動画に埋もれず、いま伸びているものが上に来ます。</span></li>
+    <li><b>狙い目チャンネルの発見</b><span>登録者数のわりに再生が回った動画を抽出。知名度ではなく企画の力で伸びたものが分かります。</span></li>
+    <li><b>タイトルの型を分析</b><span>10種類の型を自動判定し、どの型が実際に数字を取れているかを集計します。</span></li>
+    <li><b>グラフを自前生成</b><span>Chart.js 等は使わず、横棒グラフと両対数散布図を SVG で直接組み立てています。</span></li>
+  </ul>
+
+  <h2>使い方</h2>
+  <p><code>node index.js "AI 副業 初心者"</code> と打つだけでレポートが生成されます。<code>npm install</code> は不要です。</p>
+
+  <footer>制作: 竹元洋実 / Node.js・YouTube Data API v3 / 依存パッケージ 0</footer>
+</div>
+</body>
+</html>
