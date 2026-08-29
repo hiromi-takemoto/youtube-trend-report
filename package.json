@@ -1,0 +1,12 @@
+{
+  "name": "youtube-trend-report",
+  "version": "1.0.0",
+  "description": "YouTubeの実データからトレンドを分析し、HTMLレポートを自動生成するツール",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
