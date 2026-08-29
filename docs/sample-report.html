@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YouTubeトレンド分析 - Claude Code 副業</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#666;--line:#e5e5e5;--card:#fafafa;--accent:#c4302b;--hot:#e8a13a;--good:#2e7d5b}
+@media (prefers-color-scheme:dark){:root{--bg:#16181c;--fg:#e8e8e8;--muted:#9aa0a6;--line:#2c2f36;--card:#1e2126;--accent:#ff6b63;--hot:#ffc46b;--good:#5ec99a}}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 20px 80px;background:var(--bg);color:var(--fg);
+ font-family:"Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:.02em}
+h2{font-size:19px;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h3{font-size:15px;margin:24px 0 8px;color:var(--muted)}
+.sub{color:var(--muted);font-size:13px;margin:0 0 8px}
+.cards{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+.card{flex:1 1 140px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card .n{font-size:22px;font-weight:700}
+.card .k{font-size:12px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
+th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:12px;white-space:nowrap}
+td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.scroll{overflow-x:auto}
+.chart{display:block;margin:12px 0 4px}
+.chart .bar{fill:var(--accent);opacity:.85}
+.chart .lbl{font-size:11px;fill:var(--fg)}
+.chart .val{font-size:11px;fill:var(--muted);font-variant-numeric:tabular-nums}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .tick,.chart .axis{font-size:10px;fill:var(--muted)}
+.chart .dot{fill:var(--accent);opacity:.55}
+.chart .dot.hot{fill:var(--hot);opacity:1;stroke:var(--bg);stroke-width:1.5}
+.chart .eqline{stroke:var(--good);stroke-width:1.5;stroke-dasharray:5 4;opacity:.8}
+.tag{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:20px;
+ padding:3px 11px;margin:3px 4px 3px 0;font-size:12px}
+.note{background:var(--card);border-left:3px solid var(--accent);padding:12px 14px;border-radius:0 8px 8px 0;
+ font-size:13px;margin:14px 0;color:var(--muted)}
+.ex{font-size:12px;color:var(--muted);margin:2px 0 0}
+footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+</style></head><body><div class="wrap">
+
+<h1>YouTubeトレンド分析レポート</h1>
+<p class="sub">キーワード「<strong>Claude Code 副業</strong>」 ／ 作成 2026/8/29 10:18:55 ／ API消費 102ポイント</p>
+
+<div class="cards">
+  <div class="card"><div class="n">25</div><div class="k">分析した動画</div></div>
+  <div class="card"><div class="n">22</div><div class="k">チャンネル数</div></div>
+  <div class="card"><div class="n">54,205</div><div class="k">再生数の中央値</div></div>
+  <div class="card"><div class="n">4%</div><div class="k">ショート動画の割合</div></div>
+  <div class="card"><div class="n">24分</div><div class="k">平均の長さ</div></div>
+</div>
+
+<h2>1. 勢いランキング</h2>
+<p class="sub">「1日あたり再生数」＝ 再生数 ÷ 投稿からの日数。昔バズった動画に埋もれず、いま伸びているものが上に来ます。</p>
+<svg viewBox="0 0 720 510" width="100%" height="510" role="img" class="chart">
+    <g>
+      <title>⁠Give Me 26 minutes, I&#39;ll Give You 10,000 hours of Claude Knowledge</title>
+      <text x="250" y="18.2" text-anchor="end" class="lbl">⁠Give Me 26 minutes, I&#39;…</text>
+      <rect x="260" y="0" width="370" height="26" rx="4" class="bar"/>
+      <text x="638" y="18.2" class="val">25,166</text>
+    </g>
+    <g>
+      <title>【Claude Code活用法】4時間でMC野嶋専用のAIエージェントを構築／21時間の作業が10分に／ゼロ知識からでも挑戦できるAI講座</title>
+      <text x="250" y="52.2" text-anchor="end" class="lbl">【Claude Code活用法】4時間でMC野…</text>
+      <rect x="260" y="34" width="230.40093777318606" height="26" rx="4" class="bar"/>
+      <text x="498.40093777318606" y="52.2" class="val">15,671</text>
+    </g>
+    <g>
+      <title>10 Claude AI Side Hustles That Can Pay A Full-Time Income (Ranked List)</title>
+      <text x="250" y="86.2" text-anchor="end" class="lbl">10 Claude AI Side Hustl…</text>
+      <rect x="260" y="68" width="159.87363903679568" height="26" rx="4" class="bar"/>
+      <text x="427.8736390367957" y="86.2" class="val">10,874</text>
+    </g>
+    <g>
+      <title>【マジで凄い！】Claude Codeを使った次世代AI活用法！　【最強MCP Higgsfield】</title>
+      <text x="250" y="120.2" text-anchor="end" class="lbl">【マジで凄い！】Claude Codeを使った…</text>
+      <rect x="260" y="102" width="123.57347214495749" height="26" rx="4" class="bar"/>
+      <text x="391.57347214495746" y="120.2" class="val">8,405</text>
+    </g>
+    <g>
+      <title>BEST Claude A.I. Side Hustle Nobody is Talking About</title>
+      <text x="250" y="154.2" text-anchor="end" class="lbl">BEST Claude A.I. Side H…</text>
+      <rect x="260" y="136" width="115.56067710402924" height="26" rx="4" class="bar"/>
+      <text x="383.56067710402925" y="154.2" class="val">7,860</text>
+    </g>
+    <g>
+      <title>今がチャンス！主婦も会社員もAIで稼げる時代【リベ大公式切り抜き】</title>
+      <text x="250" y="188.2" text-anchor="end" class="lbl">今がチャンス！主婦も会社員もAIで稼げる時代【…</text>
+      <rect x="260" y="170" width="71.18890566637528" height="26" rx="4" class="bar"/>
+      <text x="339.18890566637526" y="188.2" class="val">4,842</text>
+    </g>
+    <g>
+      <title>How This 30 Yr Old Made ₹1 Crores by Using AI | Claude Code | #251 The Sanskar Show</title>
+      <text x="250" y="222.2" text-anchor="end" class="lbl">How This 30 Yr Old Made…</text>
+      <rect x="260" y="204" width="69.58634665818961" height="26" rx="4" class="bar"/>
+      <text x="337.5863466581896" y="222.2" class="val">4,733</text>
+    </g>
+    <g>
+      <title>【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】</title>
+      <text x="250" y="256.2" text-anchor="end" class="lbl">【最新】Claude Codeを使って月30万…</text>
+      <rect x="260" y="238" width="50.82611459906222" height="26" rx="4" class="bar"/>
+      <text x="318.82611459906224" y="256.2" class="val">3,457</text>
+    </g>
+    <g>
+      <title>7 Claude AI Side Hustles That Pay More Than a 9-5</title>
+      <text x="250" y="290.2" text-anchor="end" class="lbl">7 Claude AI Side Hustle…</text>
+      <rect x="260" y="272" width="50.13510291663355" height="26" rx="4" class="bar"/>
+      <text x="318.13510291663357" y="290.2" class="val">3,410</text>
+    </g>
+    <g>
+      <title>10 Claude AI Side Hustles That Can Pay A Full-Time Income (Start Today)</title>
+      <text x="250" y="324.2" text-anchor="end" class="lbl">10 Claude AI Side Hustl…</text>
+      <rect x="260" y="306" width="48.92950806643885" height="26" rx="4" class="bar"/>
+      <text x="316.92950806643887" y="324.2" class="val">3,328</text>
+    </g>
+    <g>
+      <title>【完全実録】初心者がClaudeで有料noteを作って販売するまで｜アカウントの新規登録から販売までの全工程を大公開！</title>
+      <text x="250" y="358.2" text-anchor="end" class="lbl">【完全実録】初心者がClaudeで有料note…</text>
+      <rect x="260" y="340" width="44.38647381387587" height="26" rx="4" class="bar"/>
+      <text x="312.38647381387585" y="358.2" class="val">3,019</text>
+    </g>
+    <g>
+      <title>Claudeを触った瞬間、今までのYouTube運営がバカらしくなった</title>
+      <text x="250" y="392.2" text-anchor="end" class="lbl">Claudeを触った瞬間、今までのYouTub…</text>
+      <rect x="260" y="374" width="43.07796233012795" height="26" rx="4" class="bar"/>
+      <text x="311.07796233012795" y="392.2" class="val">2,930</text>
+    </g>
+    <g>
+      <title>【スグ使える】ClaudeCodeを使いこなすための必須神機能15選紹介するで！</title>
+      <text x="250" y="426.2" text-anchor="end" class="lbl">【スグ使える】ClaudeCodeを使いこなす…</text>
+      <rect x="260" y="408" width="38.65254708734006" height="26" rx="4" class="bar"/>
+      <text x="306.65254708734005" y="426.2" class="val">2,629</text>
+    </g>
+    <g>
+      <title>【損してる】ClaudeCodeはフォルダ設計が命。同じプロンプトなのに、なぜ差がつくのか？初心者が見落としがちな、CLAUDE.md、ファイル検索のルール、今日やる3ステップを徹底解説。</title>
+      <text x="250" y="460.2" text-anchor="end" class="lbl">【損してる】ClaudeCodeはフォルダ設計…</text>
+      <rect x="260" y="442" width="34.947548279424616" height="26" rx="4" class="bar"/>
+      <text x="302.9475482794246" y="460.2" class="val">2,377</text>
+    </g>
+    <g>
+      <title>1週間、AIだけでアプリを作って売ってみた！</title>
+      <text x="250" y="494.2" text-anchor="end" class="lbl">1週間、AIだけでアプリを作って売ってみた！</text>
+      <rect x="260" y="476" width="31.40427560994993" height="26" rx="4" class="bar"/>
+      <text x="299.40427560994993" y="494.2" class="val">2,136</text>
+    </g></svg>
+<div class="scroll"><table>
+<thead><tr><th class="num">#</th><th>動画</th><th class="num">再生数</th><th class="num">1日あたり</th><th class="num">経過</th></tr></thead>
+<tbody><tr>
+      <td class="num">1</td>
+      <td><a href="https://www.youtube.com/watch?v=wtDDjBOfTZo" target="_blank" rel="noopener">⁠Give Me 26 minutes, I&#39;ll Give You 10,000 hours of Claude Knowledge</a>
+        <div class="ex">Iman Gadzhi</div></td>
+      <td class="num">940,668</td>
+      <td class="num">25,166</td>
+      <td class="num">37日</td>
+    </tr><tr>
+      <td class="num">2</td>
+      <td><a href="https://www.youtube.com/watch?v=PtawWgUjhXA" target="_blank" rel="noopener">【Claude Code活用法】4時間でMC野嶋専用のAIエージェントを構築／21時間の作業が10分に／ゼロ知識からでも挑戦できるAI講座</a>
+        <div class="ex">PIVOT 公式チャンネル ・ショート</div></td>
+      <td class="num">404,373</td>
+      <td class="num">15,671</td>
+      <td class="num">26日</td>
+    </tr><tr>
+      <td class="num">3</td>
+      <td><a href="https://www.youtube.com/watch?v=jVOk8oc-a70" target="_blank" rel="noopener">10 Claude AI Side Hustles That Can Pay A Full-Time Income (Ranked List)</a>
+        <div class="ex">Patrick Dang</div></td>
+      <td class="num">309,606</td>
+      <td class="num">10,874</td>
+      <td class="num">28日</td>
+    </tr><tr>
+      <td class="num">4</td>
+      <td><a href="https://www.youtube.com/watch?v=3CjCfVbD1oA" target="_blank" rel="noopener">【マジで凄い！】Claude Codeを使った次世代AI活用法！　【最強MCP Higgsfield】</a>
+        <div class="ex">パソコン博士TAIKI</div></td>
+      <td class="num">299,526</td>
+      <td class="num">8,405</td>
+      <td class="num">36日</td>
+    </tr><tr>
+      <td class="num">5</td>
+      <td><a href="https://www.youtube.com/watch?v=sQQN53qx-VI" target="_blank" rel="noopener">BEST Claude A.I. Side Hustle Nobody is Talking About</a>
+        <div class="ex">Sean Dollwet</div></td>
+      <td class="num">200,856</td>
+      <td class="num">7,860</td>
+      <td class="num">26日</td>
+    </tr><tr>
+      <td class="num">6</td>
+      <td><a href="https://www.youtube.com/watch?v=cP4h5ZUCHr4" target="_blank" rel="noopener">今がチャンス！主婦も会社員もAIで稼げる時代【リベ大公式切り抜き】</a>
+        <div class="ex">両学長 リベラルアーツ大学</div></td>
+      <td class="num">199,169</td>
+      <td class="num">4,842</td>
+      <td class="num">41日</td>
+    </tr><tr>
+      <td class="num">7</td>
+      <td><a href="https://www.youtube.com/watch?v=QTMPWXlp--Y" target="_blank" rel="noopener">How This 30 Yr Old Made ₹1 Crores by Using AI | Claude Code | #251 The Sanskar Show</a>
+        <div class="ex">Sanskar Goyal</div></td>
+      <td class="num">130,026</td>
+      <td class="num">4,733</td>
+      <td class="num">27日</td>
+    </tr><tr>
+      <td class="num">8</td>
+      <td><a href="https://www.youtube.com/watch?v=aU4BvO8N7_0" target="_blank" rel="noopener">【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】</a>
+        <div class="ex">むっちょの副業月5万攻略</div></td>
+      <td class="num">54,205</td>
+      <td class="num">3,457</td>
+      <td class="num">16日</td>
+    </tr><tr>
+      <td class="num">9</td>
+      <td><a href="https://www.youtube.com/watch?v=UN_iGIj9bRw" target="_blank" rel="noopener">7 Claude AI Side Hustles That Pay More Than a 9-5</a>
+        <div class="ex">Patrick Dang</div></td>
+      <td class="num">175,532</td>
+      <td class="num">3,410</td>
+      <td class="num">51日</td>
+    </tr><tr>
+      <td class="num">10</td>
+      <td><a href="https://www.youtube.com/watch?v=ViEXFgHjoTU" target="_blank" rel="noopener">10 Claude AI Side Hustles That Can Pay A Full-Time Income (Start Today)</a>
+        <div class="ex">Ritesh Verma</div></td>
+      <td class="num">48,207</td>
+      <td class="num">3,328</td>
+      <td class="num">14日</td>
+    </tr><tr>
+      <td class="num">11</td>
+      <td><a href="https://www.youtube.com/watch?v=npqcZ9S18f4" target="_blank" rel="noopener">【完全実録】初心者がClaudeで有料noteを作って販売するまで｜アカウントの新規登録から販売までの全工程を大公開！</a>
+        <div class="ex">ほなみ【在宅ワーク・副業のトリセツ】</div></td>
+      <td class="num">134,593</td>
+      <td class="num">3,019</td>
+      <td class="num">45日</td>
+    </tr><tr>
+      <td class="num">12</td>
+      <td><a href="https://www.youtube.com/watch?v=fNb53l93ELA" target="_blank" rel="noopener">Claudeを触った瞬間、今までのYouTube運営がバカらしくなった</a>
+        <div class="ex">RKJ VIDEO 【イケている動画を作りたいなら】</div></td>
+      <td class="num">69,266</td>
+      <td class="num">2,930</td>
+      <td class="num">24日</td>
+    </tr><tr>
+      <td class="num">13</td>
+      <td><a href="https://www.youtube.com/watch?v=2s-Omcaiv_g" target="_blank" rel="noopener">【スグ使える】ClaudeCodeを使いこなすための必須神機能15選紹介するで！</a>
+        <div class="ex">【さき】のAIでええやん。</div></td>
+      <td class="num">51,458</td>
+      <td class="num">2,629</td>
+      <td class="num">20日</td>
+    </tr><tr>
+      <td class="num">14</td>
+      <td><a href="https://www.youtube.com/watch?v=GkwMTOmwtJw" target="_blank" rel="noopener">【損してる】ClaudeCodeはフォルダ設計が命。同じプロンプトなのに、なぜ差がつくのか？初心者が見落としがちな、CLAUDE.md、ファイル検索のルール、今日やる3ステップを徹底解説。</a>
+        <div class="ex">チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ</div></td>
+      <td class="num">32,911</td>
+      <td class="num">2,377</td>
+      <td class="num">14日</td>
+    </tr><tr>
+      <td class="num">15</td>
+      <td><a href="https://www.youtube.com/watch?v=gsC2v_Qq05g" target="_blank" rel="noopener">1週間、AIだけでアプリを作って売ってみた！</a>
+        <div class="ex">プログラミングチュートリアル</div></td>
+      <td class="num">82,428</td>
+      <td class="num">2,136</td>
+      <td class="num">39日</td>
+    </tr><tr>
+      <td class="num">16</td>
+      <td><a href="https://www.youtube.com/watch?v=zcezBLJXFn4" target="_blank" rel="noopener">Claude Code、実はこう使います。9割が知らない活用法5選</a>
+        <div class="ex">プログラミングチュートリアル</div></td>
+      <td class="num">36,525</td>
+      <td class="num">1,616</td>
+      <td class="num">23日</td>
+    </tr><tr>
+      <td class="num">17</td>
+      <td><a href="https://www.youtube.com/watch?v=GssuJLNThk0" target="_blank" rel="noopener">The NEW Way People Are Getting RICH With Claude Code</a>
+        <div class="ex">Wholesale Ted</div></td>
+      <td class="num">41,421</td>
+      <td class="num">1,368</td>
+      <td class="num">30日</td>
+    </tr><tr>
+      <td class="num">18</td>
+      <td><a href="https://www.youtube.com/watch?v=CLDFUJEzAMk" target="_blank" rel="noopener">NEW Claude Code Side Hustles NO ONE Is Talking About</a>
+        <div class="ex">Wholesale Ted</div></td>
+      <td class="num">47,584</td>
+      <td class="num">1,277</td>
+      <td class="num">37日</td>
+    </tr><tr>
+      <td class="num">19</td>
+      <td><a href="https://www.youtube.com/watch?v=dvm3nqVlzuo" target="_blank" rel="noopener">I Tested 5 Claude AI Side Hustles — Only These Actually Made Money</a>
+        <div class="ex">Shane Hummus</div></td>
+      <td class="num">64,369</td>
+      <td class="num">1,189</td>
+      <td class="num">54日</td>
+    </tr><tr>
+      <td class="num">20</td>
+      <td><a href="https://www.youtube.com/watch?v=PPqzxOrGUjQ" target="_blank" rel="noopener">【必ず見て❗️】2026年最新❗️無料で不労所得❗️寝てる間にAIが稼ぐ仕組みの作り方❗️AI×自動化を超初心者向け徹底解説🔰【チャットGPT】【Claude】【AI副業】</a>
+        <div class="ex">あべむつき【ラッキーマイン】</div></td>
+      <td class="num">48,494</td>
+      <td class="num">1,166</td>
+      <td class="num">42日</td>
+    </tr></tbody></table></div>
+
+<h2>2. 狙い目チャンネル</h2>
+<p class="sub">登録者数のわりに再生が回った動画。チャンネルの知名度ではなく<strong>ネタの力で伸びた</strong>ということなので、後発でも同じ土俵に立てる可能性があります。</p>
+<svg viewBox="0 0 720 380" width="100%" height="380" role="img" class="chart">
+    <line x1="62" y1="18" x2="62" y2="336" class="grid"/>
+      <text x="62" y="354" text-anchor="middle" class="tick">1,000</text><line x1="275.3333333333333" y1="18" x2="275.3333333333333" y2="336" class="grid"/>
+      <text x="275.3333333333333" y="354" text-anchor="middle" class="tick">10,000</text><line x1="488.66666666666663" y1="18" x2="488.66666666666663" y2="336" class="grid"/>
+      <text x="488.66666666666663" y="354" text-anchor="middle" class="tick">100,000</text><line x1="702" y1="18" x2="702" y2="336" class="grid"/>
+      <text x="702" y="354" text-anchor="middle" class="tick">1,000,000</text><line x1="62" y1="336" x2="702" y2="336" class="grid"/>
+      <text x="54" y="340" text-anchor="end" class="tick">10,000</text><line x1="62" y1="177" x2="702" y2="177" class="grid"/>
+      <text x="54" y="181" text-anchor="end" class="tick">100,000</text><line x1="62" y1="18" x2="702" y2="18" class="grid"/>
+      <text x="54" y="22" text-anchor="end" class="tick">1,000,000</text><line x1="275.3333333333333" y1="336" x2="702" y2="18" class="eqline"/><circle cx="266.18734883772015" cy="156.48542672839295" r="6" class="dot hot"><title>【完全実録】初心者がClaudeで有料noteを作って販売するまで｜アカウントの新規登録から販売までの全工程を大公開！
+登録者 9,060 / 再生 134,593</title></circle><circle cx="185.19825063194136" cy="219.28774354761748" r="6" class="dot hot"><title>【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】
+登録者 3,780 / 再生 54,205</title></circle><circle cx="158.3811062451819" cy="256.355543012988" r="6" class="dot hot"><title>【2026年最新版】まだ日本で知られてない海外のAI副業真似したらめっちゃ稼げた。＜Claude Code＞＜ChatGPT＞
+登録者 2,830 / 再生 31,689</title></circle><circle cx="475.1229317288305" cy="158.8691977995607" r="6" class="dot hot"><title>How This 30 Yr Old Made ₹1 Crores by Using AI | Claude Code | #251 The Sanskar Show
+登録者 86,400 / 再生 130,026</title></circle><circle cx="396.0475346503505" cy="220.01901016185073" r="6" class="dot hot"><title>【2026年最新版】AIガチ勢がClaude Code(クロードコード)でやってる習慣TOP7
+登録者 36,800 / 再生 53,634</title></circle><circle cx="389.7991344152597" cy="251.23335342283076" r="6" class="dot hot"><title>5 Claude Side Hustles Nobody Is Talking About (Up To $1,000/Day?)
+登録者 34,400 / 再生 34,129</title></circle><circle cx="479.21338673354785" cy="202.35730273995534" r="6" class="dot hot"><title>Claudeを触った瞬間、今までのYouTube運営がバカらしくなった
+登録者 90,300 / 再生 69,266</title></circle><circle cx="447.17351640712525" cy="227.3854932299339" r="6" class="dot hot"><title>10 Claude AI Side Hustles That Can Pay A Full-Time Income (Start Today)
+登録者 63,900 / 再生 48,207</title></circle><circle cx="620.2934061057917" cy="98.96131041024466" r="4" class="dot"><title>10 Claude AI Side Hustles That Can Pay A Full-Time Income (Ranked List)
+登録者 414,000 / 再生 309,606</title></circle><circle cx="430.36847125900215" cy="253.74276851484433" r="4" class="dot"><title>【損してる】ClaudeCodeはフォルダ設計が命。同じプロンプトなのに、なぜ差がつくのか？初心者が見落としがちな、CLAUDE.md、ファイル検索のルール、今日やる3ステップを徹底解説。
+登録者 53,300 / 再生 32,911</title></circle><circle cx="516.4712039456014" cy="190.34411277457474" r="4" class="dot"><title>1週間、AIだけでアプリを作って売ってみた！
+登録者 135,000 / 再生 82,428</title></circle><circle cx="620.2934061057917" cy="138.14734811219262" r="4" class="dot"><title>7 Claude AI Side Hustles That Pay More Than a 9-5
+登録者 414,000 / 再生 175,532</title></circle><circle cx="482.53884773079574" cy="243.1399051688064" r="4" class="dot"><title>【衝撃】Claude codeでAI社員を作ったら、月10万稼げました【実演】
+登録者 93,600 / 再生 38,373</title></circle><circle cx="510.07904962507996" cy="222.87898848161387" r="4" class="dot"><title>【スグ使える】ClaudeCodeを使いこなすための必須神機能15選紹介するで！
+登録者 126,000 / 再生 51,458</title></circle><circle cx="636.6617491037114" cy="128.84131527834458" r="4" class="dot"><title>BEST Claude A.I. Side Hustle Nobody is Talking About
+登録者 494,000 / 再生 200,856</title></circle>
+    <text x="360" y="374" text-anchor="middle" class="axis">チャンネル登録者数 →</text>
+    <text x="14" y="190" text-anchor="middle" transform="rotate(-90 14 190)" class="axis">動画の再生数 →</text>
+  </svg>
+<p class="note">緑の点線より上にある点＝登録者数を超える再生数が出た動画。オレンジは特に倍率が高いものです。</p>
+<div class="scroll"><table>
+<thead><tr><th>動画</th><th class="num">登録者</th><th class="num">再生数</th><th class="num">登録者比</th></tr></thead>
+<tbody><tr>
+      <td><a href="https://www.youtube.com/watch?v=npqcZ9S18f4" target="_blank" rel="noopener">【完全実録】初心者がClaudeで有料noteを作って販売するまで｜アカウントの新規登録から販売までの全工程を大公開！</a>
+        <div class="ex">ほなみ【在宅ワーク・副業のトリセツ】（2026-04-21 開始・36本）</div></td>
+      <td class="num">9,060</td>
+      <td class="num">134,593</td>
+      <td class="num"><strong>14.9倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=aU4BvO8N7_0" target="_blank" rel="noopener">【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】</a>
+        <div class="ex">むっちょの副業月5万攻略（2025-07-07 開始・56本）</div></td>
+      <td class="num">3,780</td>
+      <td class="num">54,205</td>
+      <td class="num"><strong>14.3倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=0JCBBkdHDCI" target="_blank" rel="noopener">【2026年最新版】まだ日本で知られてない海外のAI副業真似したらめっちゃ稼げた。＜Claude Code＞＜ChatGPT＞</a>
+        <div class="ex">ここなのAIマネタイズ部屋（2026-07-07 開始・5本）</div></td>
+      <td class="num">2,830</td>
+      <td class="num">31,689</td>
+      <td class="num"><strong>11.2倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=QTMPWXlp--Y" target="_blank" rel="noopener">How This 30 Yr Old Made ₹1 Crores by Using AI | Claude Code | #251 The Sanskar Show</a>
+        <div class="ex">Sanskar Goyal（2021-09-01 開始・618本）</div></td>
+      <td class="num">86,400</td>
+      <td class="num">130,026</td>
+      <td class="num"><strong>1.5倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=ehXvwIR7XFY" target="_blank" rel="noopener">【2026年最新版】AIガチ勢がClaude Code(クロードコード)でやってる習慣TOP7</a>
+        <div class="ex">むっちょ【Claude Code攻略】（2021-09-05 開始・95本）</div></td>
+      <td class="num">36,800</td>
+      <td class="num">53,634</td>
+      <td class="num"><strong>1.5倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=nWJYeNwrRvY" target="_blank" rel="noopener">5 Claude Side Hustles Nobody Is Talking About (Up To $1,000/Day?)</a>
+        <div class="ex">Thinkverse AI（2025-06-08 開始・79本）</div></td>
+      <td class="num">34,400</td>
+      <td class="num">34,129</td>
+      <td class="num"><strong>1.0倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=fNb53l93ELA" target="_blank" rel="noopener">Claudeを触った瞬間、今までのYouTube運営がバカらしくなった</a>
+        <div class="ex">RKJ VIDEO 【イケている動画を作りたいなら】（2017-02-22 開始・293本）</div></td>
+      <td class="num">90,300</td>
+      <td class="num">69,266</td>
+      <td class="num"><strong>0.8倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=ViEXFgHjoTU" target="_blank" rel="noopener">10 Claude AI Side Hustles That Can Pay A Full-Time Income (Start Today)</a>
+        <div class="ex">Ritesh Verma（2021-01-15 開始・243本）</div></td>
+      <td class="num">63,900</td>
+      <td class="num">48,207</td>
+      <td class="num"><strong>0.8倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=jVOk8oc-a70" target="_blank" rel="noopener">10 Claude AI Side Hustles That Can Pay A Full-Time Income (Ranked List)</a>
+        <div class="ex">Patrick Dang（2019-07-17 開始・662本）</div></td>
+      <td class="num">414,000</td>
+      <td class="num">309,606</td>
+      <td class="num"><strong>0.7倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=GkwMTOmwtJw" target="_blank" rel="noopener">【損してる】ClaudeCodeはフォルダ設計が命。同じプロンプトなのに、なぜ差がつくのか？初心者が見落としがちな、CLAUDE.md、ファイル検索のルール、今日やる3ステップを徹底解説。</a>
+        <div class="ex">チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ（2024-09-09 開始・498本）</div></td>
+      <td class="num">53,300</td>
+      <td class="num">32,911</td>
+      <td class="num"><strong>0.6倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=gsC2v_Qq05g" target="_blank" rel="noopener">1週間、AIだけでアプリを作って売ってみた！</a>
+        <div class="ex">プログラミングチュートリアル（2020-11-15 開始・280本）</div></td>
+      <td class="num">135,000</td>
+      <td class="num">82,428</td>
+      <td class="num"><strong>0.6倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=UN_iGIj9bRw" target="_blank" rel="noopener">7 Claude AI Side Hustles That Pay More Than a 9-5</a>
+        <div class="ex">Patrick Dang（2019-07-17 開始・662本）</div></td>
+      <td class="num">414,000</td>
+      <td class="num">175,532</td>
+      <td class="num"><strong>0.4倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=Vlf3hpaEzoc" target="_blank" rel="noopener">【衝撃】Claude codeでAI社員を作ったら、月10万稼げました【実演】</a>
+        <div class="ex">ここなのAI大学（2025-06-20 開始・77本）</div></td>
+      <td class="num">93,600</td>
+      <td class="num">38,373</td>
+      <td class="num"><strong>0.4倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=2s-Omcaiv_g" target="_blank" rel="noopener">【スグ使える】ClaudeCodeを使いこなすための必須神機能15選紹介するで！</a>
+        <div class="ex">【さき】のAIでええやん。（2025-06-18 開始・81本）</div></td>
+      <td class="num">126,000</td>
+      <td class="num">51,458</td>
+      <td class="num"><strong>0.4倍</strong></td>
+    </tr><tr>
+      <td><a href="https://www.youtube.com/watch?v=sQQN53qx-VI" target="_blank" rel="noopener">BEST Claude A.I. Side Hustle Nobody is Talking About</a>
+        <div class="ex">Sean Dollwet（2011-12-26 開始・752本）</div></td>
+      <td class="num">494,000</td>
+      <td class="num">200,856</td>
+      <td class="num"><strong>0.4倍</strong></td>
+    </tr></tbody></table></div>
+
+<h2>3. タイトルの型</h2>
+<p class="sub">どの型がよく使われ、どの型が伸びているか。「平均1日あたり」が高い型ほど効いています。</p>
+<div class="scroll"><table>
+<thead><tr><th>型</th><th class="num">本数</th><th class="num">割合</th><th class="num">平均1日あたり</th></tr></thead>
+<tbody><tr>
+      <td>疑問形で引く<div class="ex">例: 【損してる】ClaudeCodeはフォルダ設計が命。同じプロンプトなのに、なぜ差がつくのか？初心者が見落としがちな、CLAUDE.md、ファイル検索のルール、今日やる3ステップを徹底解説。</div></td>
+      <td class="num">1本</td>
+      <td class="num">4%</td>
+      <td class="num">2,377</td>
+    </tr><tr>
+      <td>数字で列挙(〇選 / TOP〇)<div class="ex">例: 【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】</div></td>
+      <td class="num">4本</td>
+      <td class="num">16%</td>
+      <td class="num">2,207</td>
+    </tr><tr>
+      <td>金額を出す(月〇万 / 〇円)<div class="ex">例: 【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】</div></td>
+      <td class="num">2本</td>
+      <td class="num">8%</td>
+      <td class="num">2,189</td>
+    </tr><tr>
+      <td>実演・密着<div class="ex">例: 【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】</div></td>
+      <td class="num">2本</td>
+      <td class="num">8%</td>
+      <td class="num">2,189</td>
+    </tr><tr>
+      <td>初心者向けと明示<div class="ex">例: 【完全実録】初心者がClaudeで有料noteを作って販売するまで｜アカウントの新規登録から販売までの全工程を大公開！</div></td>
+      <td class="num">3本</td>
+      <td class="num">12%</td>
+      <td class="num">2,187</td>
+    </tr><tr>
+      <td>完全・徹底で網羅を示す<div class="ex">例: 【完全実録】初心者がClaudeで有料noteを作って販売するまで｜アカウントの新規登録から販売までの全工程を大公開！</div></td>
+      <td class="num">3本</td>
+      <td class="num">12%</td>
+      <td class="num">2,187</td>
+    </tr><tr>
+      <td>最新・年号を入れる<div class="ex">例: 【最新】Claude Codeを使って月30万を狙える副業TOP3【AI副業を実演】</div></td>
+      <td class="num">4本</td>
+      <td class="num">16%</td>
+      <td class="num">1,619</td>
+    </tr><tr>
+      <td>限定感・煽り<div class="ex">例: 【衝撃】Claude codeでAI社員を作ったら、月10万稼げました【実演】</div></td>
+      <td class="num">1本</td>
+      <td class="num">4%</td>
+      <td class="num">921</td>
+    </tr></tbody></table></div>
+
+<h3>【】でよく使われている語</h3><div><span class="tag">【2026年最新版】 2</span></div>
+
+<h3>頻出キーワード</h3>
+<div><span class="tag">Claude <strong>21</strong></span><span class="tag">AI <strong>15</strong></span><span class="tag">Code <strong>9</strong></span><span class="tag">Side <strong>7</strong></span><span class="tag">Hustles <strong>6</strong></span><span class="tag">活用法 <strong>3</strong></span><span class="tag">Pay <strong>3</strong></span><span class="tag">Talking <strong>3</strong></span><span class="tag">About <strong>3</strong></span><span class="tag">Full-Time <strong>2</strong></span><span class="tag">Income <strong>2</strong></span><span class="tag">Nobody <strong>2</strong></span><span class="tag">Made <strong>2</strong></span><span class="tag">副業 <strong>2</strong></span><span class="tag">実演 <strong>2</strong></span><span class="tag">初心者 <strong>2</strong></span><span class="tag">ClaudeCode <strong>2</strong></span><span class="tag">徹底解説 <strong>2</strong></span><span class="tag">NEW <strong>2</strong></span><span class="tag">Is <strong>2</strong></span><span class="tag">Money <strong>2</strong></span><span class="tag">年最新版 <strong>2</strong></span></div>
+
+<footer>
+YouTube Data API v3 の実データを集計。数値は取得時点のものです。<br>
+検索はチャンネル名にもマッチするため、キーワードと無関係な動画が混ざることがあります。
+</footer>
+</div></body></html>
